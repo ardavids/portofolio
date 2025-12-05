@@ -34,7 +34,7 @@ export default function Skill() {
     { name: "Linux", icon: <SiLinux className="text-black" /> },
     { name: "MikroTik", icon: <FaNetworkWired className="text-green-600" /> },
     { name: "Virtualbox", icon: <SiVirtualbox className="text-green-600" /> },
-    { name: "IT Support", icon: <FaServer className="text-slate-600" /> },
+    { name: "Database", icon: <FaServer className="text-slate-600" /> },
   ];
 
   return (

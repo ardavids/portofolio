@@ -30,14 +30,14 @@ export default function Projects() {
       demo: "#",
       repo: "#",
     },
-    {
-      title: "Network Topology Design",
-      desc: "Perancangan topologi jaringan kantor skala menengah menggunakan Cisco Packet Tracer.",
-      tags: ["Cisco", "Networking", "Simulation"],
-      image: "/project3.jpg",
-      demo: "#",
-      repo: "#",
-    },
+    // {
+    //   title: "Network Topology Design",
+    //   desc: "Perancangan topologi jaringan kantor skala menengah menggunakan Cisco Packet Tracer.",
+    //   tags: ["Cisco", "Networking", "Simulation"],
+    //   image: "/project3.jpg",
+    //   demo: "#",
+    //   repo: "#",
+    // },
   ];
 
   return (
@@ -46,7 +46,7 @@ export default function Projects() {
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold mb-4">Featured Projects</h2>
           <p className="text-gray-600">
-            Hasil karya coding dan simulasi jaringan.
+            Projects yang sedang dipelajari & dikembangkan
           </p>
         </div>
 
@@ -78,7 +78,6 @@ export default function Projects() {
                 <p className="text-gray-600 text-sm line-clamp-3 leading-relaxed">
                   {item.desc}
                 </p>
-                {/* INI BADGE YANG LU MAU */}
                 <div className="flex flex-wrap gap-2">
                   {item.tags.map((tag) => (
                     <Badge

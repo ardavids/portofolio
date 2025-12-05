@@ -37,12 +37,14 @@ const Hero = () => {
             <Button className="bg-[#1A73E8] hover:bg-blue-700 text-white px-8 py-6 rounded-md shadow-lg shadow-blue-500/30">
               Hire me
             </Button>
-            <Button
-              variant="outline"
-              className="border-gray-300 text-gray-700 px-6 py-6 rounded-md hover:bg-white hover:border-gray-400 bg-transparent"
-            >
-              Lihat Projects
-            </Button>
+            <a href="#projects">
+              <Button
+                variant="outline"
+                className="border-gray-300 text-gray-700 px-6 py-6 rounded-md hover:bg-white hover:border-gray-400 bg-transparent"
+              >
+                Lihat Projects
+              </Button>
+            </a>
           </div>
           <div className="flex gap-6 justify-center lg:justify-start pt-6">
             <SocialIcon

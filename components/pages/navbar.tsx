@@ -58,7 +58,7 @@ const Navbar = () => {
                 <SheetTitle className="text-2xl font-bold">AR!</SheetTitle>
               </SheetHeader>
 
-              <div className="flex flex-col gap-2 grow">
+              <div className="flex flex-col gap-2 items-center grow">
                 {navLinks.map((link) => (
                   <SheetClose asChild key={link.name}>
                     <Link
@@ -69,14 +69,6 @@ const Navbar = () => {
                     </Link>
                   </SheetClose>
                 ))}
-              </div>
-
-              <div className="mt-auto mb-8">
-                <SheetClose asChild>
-                  <Button className="w-full bg-[#1A73E8] hover:bg-blue-700 text-white py-6 text-lg font-semibold rounded-xl shadow-md">
-                    Download Cv
-                  </Button>
-                </SheetClose>
               </div>
             </SheetContent>
           </Sheet>
