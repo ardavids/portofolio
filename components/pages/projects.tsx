@@ -11,6 +11,7 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { FaExternalLinkAlt } from "react-icons/fa";
+import { cn } from "@/lib/utils";
 
 export default function Projects() {
   const projects = [
@@ -21,6 +22,7 @@ export default function Projects() {
       image: "/cafepos.png",
       demo: "#",
       repo: "#",
+      isLive: false,
     },
     {
       title: "Web Event Management",
@@ -38,15 +40,17 @@ export default function Projects() {
       image: "/event.png",
       demo: "#",
       repo: "#",
+      isLive: false,
     },
-    // {
-    //   title: "Network Topology Design",
-    //   desc: "Perancangan topologi jaringan kantor skala menengah menggunakan Cisco Packet Tracer.",
-    //   tags: ["Cisco", "Networking", "Simulation"],
-    //   image: "/project3.jpg",
-    //   demo: "#",
-    //   repo: "#",
-    // },
+    {
+      title: "Portfolio v1 (Legacy)",
+      desc: "Versi pertama portofolio ini yang dibangun murni dengan HTML, CSS, dan JavaScript. Website yang sedang Anda buka saat ini adalah hasil migrasi total dari project ini ke ekosistem Next.js & Tailwind dengan bantuan Gemini AI untuk akselerasi development.",
+      tags: ["HTML5", "CSS3", "Bootstrap", "JavaScript", "Responsive Design"],
+      image: "/portofolio.png",
+      demo: "https://ardavids.github.io/me/",
+      repo: "#",
+      isLive: true,
+    },
   ];
 
   return (
@@ -74,9 +78,6 @@ export default function Projects() {
                   fill
                   className="object-cover w-full h-full"
                 />
-                <div className="flex items-center justify-center h-full text-gray-400 font-medium">
-                  Image Preview
-                </div>
               </div>
 
               <CardHeader>
@@ -86,7 +87,7 @@ export default function Projects() {
               </CardHeader>
 
               <CardContent className="grow space-y-4">
-                <p className="text-gray-600 text-sm line-clamp-3 leading-relaxed">
+                <p className="text-gray-600 text-sm bg-linear-to-bl leading-relaxed">
                   {item.desc}
                 </p>
                 <div className="flex flex-wrap gap-2">
@@ -105,10 +106,25 @@ export default function Projects() {
               <CardFooter className="flex gap-4 pt-4 pb-6 border-t border-gray-100 bg-gray-50/50">
                 <Button
                   size="sm"
-                  disabled={true}
-                  className="flex-1 gap-2 bg-gray-200 text-gray-500 cursor-not-allowed hover:bg-gray-200"
+                  disabled={!item.isLive}
+                  className={cn(
+                    "w-full gap-2 transition-all inline-flex items-center justify-center",
+                    item.isLive &&
+                      "bg-[#1A73E8] hover:bg-blue-700 text-white shadow-md",
+                    !item.isLive &&
+                      "bg-gray-200 text-gray-500 hover:bg-gray-200 cursor-not-allowed"
+                  )}
+                  asChild
                 >
-                  <FaExternalLinkAlt /> Demo Soon
+                  {item.isLive ? (
+                    <a href={item.demo} target="_blank" className="flex gap-2">
+                      <FaExternalLinkAlt /> Live Demo
+                    </a>
+                  ) : (
+                    <span className="flex gap-2">
+                      <FaExternalLinkAlt /> Demo Soon
+                    </span>
+                  )}
                 </Button>
               </CardFooter>
             </Card>

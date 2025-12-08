@@ -11,6 +11,8 @@ const SocialIcon = ({
     <>
       <a
         href={href}
+        target="_blank"
+        rel="noopener noreferrer"
         className={`w-12 h-12 flex items-center justify-center bg-white rounded-full shadow-md hover:shadow-lg hover:-translate-y-1 transition-all duration-300 text-xl ${color}`}
       >
         {icon}

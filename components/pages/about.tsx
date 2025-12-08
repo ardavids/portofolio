@@ -21,8 +21,16 @@ export default function About() {
         </p>
 
         <div className="flex justify-center gap-4">
-          <Button className="bg-white text-blue-700 hover:bg-gray-100 rounded-full px-8 py-6 font-bold text-md shadow-lg">
-            Hubungi Saya
+          <Button
+            className="bg-white text-blue-700 hover:bg-gray-100 rounded-full px-8 py-6 font-bold text-md shadow-lg"
+            asChild
+          >
+            <a
+              href="https://wa.me/6289612035176?text=Halo%20David%2C%20saya%20tertarik%20bekerja%20sama"
+              target="_blank"
+            >
+              Hubungi Saya
+            </a>
           </Button>
         </div>
       </div>

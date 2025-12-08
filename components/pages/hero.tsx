@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Typewriter from "typewriter-effect";
 import { Button } from "../ui/button";
-import { FaLinkedinIn, FaInstagram, FaGithub } from "react-icons/fa";
+import { FaLinkedinIn, FaGithub } from "react-icons/fa";
 import SocialIcon from "../ui/social-icon";
 
 const Hero = () => {
@@ -30,34 +30,40 @@ const Hero = () => {
             </h1>
           </div>
           <p className="text-black max-w-lg mx-auto md:mx-0 leading-relaxed">
-            Saya seorang pengembang frontend pemula dengan pengalaman dalam
+            Saya seorang pengembang website pemula dengan pengalaman dalam
             membuat situs web yang menarik secara visual dan ramah pengguna.
           </p>
           <div className="flex gap-4 justify-center lg:justify-start pt-2">
-            <Button className="bg-[#1A73E8] hover:bg-blue-700 text-white px-8 py-6 rounded-md shadow-lg shadow-blue-500/30">
-              Hire me
+            <Button
+              className="bg-[#1A73E8] hover:bg-blue-700 text-white px-8 py-6 rounded-md shadow-lg shadow-blue-500/30 cursor-pointer"
+              asChild
+            >
+              <a href="mailto:arnolddavid175@gmail.com"> Hire me</a>
             </Button>
-            <a href="#projects">
-              <Button
-                variant="outline"
-                className="border-gray-300 text-gray-700 px-6 py-6 rounded-md hover:bg-white hover:border-gray-400 bg-transparent"
-              >
-                Lihat Projects
-              </Button>
-            </a>
+            <Button
+              variant="outline"
+              className="border-gray-300 text-gray-700 px-6 py-6 rounded-md hover:bg-white hover:border-gray-400 bg-transparent"
+              asChild
+            >
+              <a href="#projects">Lihat Projects</a>
+            </Button>
           </div>
           <div className="flex gap-6 justify-center lg:justify-start pt-6">
             <SocialIcon
               icon={<FaLinkedinIn />}
-              href="#"
+              href="https://www.linkedin.com/in/arnold-david-652188272"
               color="text-[#0077B5]"
             />
-            <SocialIcon
+            {/* <SocialIcon
               icon={<FaInstagram />}
               href="#"
               color="text-[#E4405F]"
+            /> */}
+            <SocialIcon
+              icon={<FaGithub />}
+              href="https://github.com/ardavids"
+              color="text-[#333]"
             />
-            <SocialIcon icon={<FaGithub />} href="#" color="text-[#333]" />
           </div>
         </section>
         <div className="flex-1 flex justify-center lg:justify-end relative">

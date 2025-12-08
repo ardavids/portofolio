@@ -1,4 +1,4 @@
-import { FaLinkedinIn, FaInstagram, FaGithub } from "react-icons/fa";
+import { FaLinkedinIn, FaGithub } from "react-icons/fa";
 import SocialIcon from "../ui/social-icon";
 
 export default function Footer() {
@@ -8,27 +8,30 @@ export default function Footer() {
         <div className="flex justify-center  gap-6 mb-8">
           <SocialIcon
             icon={<FaLinkedinIn />}
-            href="#"
+            href="https://www.linkedin.com/in/arnold-david-652188272"
             color="text-[#0077B5] hover:text-blue-400"
           />
-          <SocialIcon
+          {/* <SocialIcon
             icon={<FaInstagram />}
             href="#"
             color="text-[#E4405F] hover:text-pink-400"
-          />
+          /> */}
           <SocialIcon
             icon={<FaGithub />}
-            href="#"
+            href="https://github.com/ardavids"
             color="text-[#333] hover:text-gray-400"
           />
         </div>
 
         <nav className="flex justify-center gap-6 mb-4 text-sm font-medium">
-          <a href="#skill" className="hover:text-blue-400 transition">
-            Skills
+          <a href="#experience" className="hover:text-blue-400 transition">
+            Experience
           </a>
           <a href="#projects" className="hover:text-blue-400 transition">
             Projects
+          </a>
+          <a href="#skill" className="hover:text-blue-400 transition">
+            Skills
           </a>
           <a href="#about" className="hover:text-blue-400 transition">
             About
@@ -40,8 +43,10 @@ export default function Footer() {
             © {new Date().getFullYear()} Arnold David Silaban. All rights
             reserved.
           </p>
-          <p className="text-xs text-slate-600 mt-1">
-            Built with Next.js Tailwind CSS & Gemini AI
+          <p className="text-xs text-slate-500 mt-2">
+            Built with <span className="text-slate-300">Next.js</span>,
+            <span className="text-cyan-400">Tailwind CSS</span> &
+            <span className="text-blue-400 font-medium">Gemini AI</span>
           </p>
         </div>
       </div>
