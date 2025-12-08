@@ -9,7 +9,7 @@ export default function Experience() {
     {
       role: "Freelance IT Technician",
       company: "Self-Employed",
-      date: "2022 - Sekarang",
+      date: "2023 - Sekarang",
       location: "Remote / On-site",
       desc: "Menyediakan jasa perbaikan perangkat keras dan lunak secara mandiri. Berhasil mendiagnosa dan memperbaiki berbagai masalah laptop/PC klien, melakukan instalasi ulang OS (Windows/Linux), serta memberikan konsultasi upgrade spesifikasi hardware untuk performa optimal.",
       skills: [
@@ -24,7 +24,7 @@ export default function Experience() {
       company: "SMK Canda Bhirawa Pare",
       date: "Juli 2021 - Januari 2022",
       location: "Kediri, Jawa Timur",
-      desc: "Bertanggung jawab atas pemeliharaan laboratorium komputer. Berkolaborasi dengan tim dalam pembangunan lab baru (setup 30+ PC), konfigurasi jaringan LAN, serta troubleshooting rutin hardware dan software untuk mendukung kegiatan belajar mengajar.",
+      desc: "Bertanggung jawab atas pemeliharaan laboratorium komputer. Berkolaborasi dengan tim dalam pembangunan lab baru dan melakukan setup 30+ PC, konfigurasi jaringan LAN, serta troubleshooting rutin hardware dan software untuk mendukung kegiatan belajar mengajar.",
       skills: ["LAN Setup", "PC Assembly", "Network Configuration", "Teamwork"],
     },
   ];

@@ -17,7 +17,7 @@ export default function Projects() {
   const projects = [
     {
       title: "POS App (Point of Sales)",
-      desc: "Aplikasi kasir realtime dengan fitur manajemen stok, transaksi, dan laporan penjualan.",
+      desc: "Aplikasi kasir realtime dengan fitur manajemen stok, transaksi, dan laporan penjualan. Simulasi sistem kasir real-time. Memahami alur data transaksi, database stok, dan integrasi hardware basic",
       tags: ["Typscript", "Next.js App", "Supabase", "Midtrans", "Tailwind"],
       image: "/cafepos.png",
       demo: "#",

@@ -8,15 +8,15 @@ export default function About() {
       <div className="bg-[#1A73E8] text-white rounded-3xl p-8 lg:p-16 text-center shadow-2xl shadow-blue-200">
         <h2 className="text-3xl font-bold mb-6">About Me</h2>
         <p className="text-blue-100 text-lg max-w-3xl mx-auto leading-relaxed mb-10">
-          Hai! Saya David, lulusan SMK Teknik Komputer & Jaringan, {""} saya
-          punya skill dalam melakukan troubleshooting hardware dan software pada
-          komputer, instalasi OS, rakit PC.
+          Lulusan TKJ yang memiliki pemahaman kuat di Hardware & Jaringan, serta
+          antusias mempelajari sistem manajemen bisnis (POS/ERP) untuk membantu
+          operasional perusahaan
           <br />
           <br />
           <span>
             Dan juga saya suka mengikuti perkembangan teknologi hardware pada
-            komputer. Kesibukaan saya sekarang belajar coding untuk menjadi
-            fullstack web developer!
+            komputer. Saat ini saya aktif mendalami pengembangan sistem berbasis
+            web.
           </span>
         </p>
 

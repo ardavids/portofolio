@@ -30,8 +30,9 @@ const Hero = () => {
             </h1>
           </div>
           <p className="text-black max-w-lg mx-auto md:mx-0 leading-relaxed">
-            Saya seorang pengembang website pemula dengan pengalaman dalam
-            membuat situs web yang menarik secara visual dan ramah pengguna.
+            IT Support Specialist yang memiliki passion dalam Network
+            Infrastructure dan Web Technologies untuk menciptakan sistem yang
+            efisien
           </p>
           <div className="flex gap-4 justify-center lg:justify-start pt-2">
             <Button

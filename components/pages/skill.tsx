@@ -8,7 +8,6 @@ import {
   SiReact,
   SiNextdotjs,
   SiTailwindcss,
-  SiBootstrap,
   SiExpress,
   SiNodedotjs,
   SiLinux,
@@ -25,7 +24,6 @@ export default function Skill() {
     { name: "React", icon: <SiReact className="text-cyan-400" /> },
     { name: "Next.js", icon: <SiNextdotjs className="text-black" /> },
     { name: "Tailwind", icon: <SiTailwindcss className="text-cyan-500" /> },
-    { name: "Bootstrap", icon: <SiBootstrap className="text-purple-600" /> },
     { name: "ExpressJs", icon: <SiExpress className="text-black" /> },
     { name: "NodeJs", icon: <SiNodedotjs className="text-green-600" /> },
   ];
@@ -43,7 +41,7 @@ export default function Skill() {
       className="container mx-auto px-6 lg:px-12 py-20 bg-white"
     >
       <div className="text-center mb-16">
-        <h2 className="text-3xl font-bold mb-4">My Skills</h2>
+        <h2 className="text-3xl font-bold mb-4">Technical Skills</h2>
         <p className="text-gray-600 max-w-2xl mx-auto">
           Tools dan teknologi yang saya gunakan untuk membangun website dan
           infrastruktur jaringan.
@@ -51,9 +49,6 @@ export default function Skill() {
       </div>
 
       <div className="mb-12">
-        <h3 className="text-xl font-semibold text-center mb-8 text-gray-500">
-          Web Development
-        </h3>
         <div className="flex flex-wrap justify-center gap-6 md:gap-10">
           {webSkills.map((item, idx) => (
             <div
@@ -68,27 +63,21 @@ export default function Skill() {
               </span>
             </div>
           ))}
-        </div>
-      </div>
-
-      <div>
-        <h3 className="text-xl font-semibold text-center mb-8 text-gray-500">
-          Network & IT Support
-        </h3>
-        <div className="flex flex-wrap justify-center gap-6 md:gap-10">
-          {networkSkills.map((item, idx) => (
-            <div
-              key={idx}
-              className="group flex flex-col items-center gap-3 p-4 w-24 md:w-32 rounded-xl border border-transparent hover:border-gray-100 hover:shadow-lg hover:-translate-y-2 transition-all duration-300 cursor-default"
-            >
-              <div className="text-4xl md:text-5xl group-hover:scale-110 transition-transform duration-300">
-                {item.icon}
+          <div className="flex flex-wrap justify-center gap-6 md:gap-10">
+            {networkSkills.map((item, idx) => (
+              <div
+                key={idx}
+                className="group flex flex-col items-center gap-3 p-4 w-24 md:w-32 rounded-xl border border-transparent hover:border-gray-100 hover:shadow-lg hover:-translate-y-2 transition-all duration-300 cursor-default"
+              >
+                <div className="text-4xl md:text-5xl group-hover:scale-110 transition-transform duration-300">
+                  {item.icon}
+                </div>
+                <span className="text-sm font-medium text-gray-600 group-hover:text-black">
+                  {item.name}
+                </span>
               </div>
-              <span className="text-sm font-medium text-gray-600 group-hover:text-black">
-                {item.name}
-              </span>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       </div>
     </section>
