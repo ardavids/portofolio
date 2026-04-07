@@ -9,8 +9,32 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "My Portofolio",
-  description: "Dibuat oleh gua AR",
+  title: "Arnold David Silaban - Fullstack Developer",
+  description:
+    "Portofolio profesional Arnold David Silaban. Lulusan TKJ dengan spesialisasi pengembangan Web Fullstack (Next.js, React) dan AI-Assisted Development.",
+  openGraph: {
+    title: "Arnold David Silaban - Fullstack Developer",
+    description:
+      "Portofolio profesional Arnold David Silaban. Spesialisasi pengembangan Web Fullstack dan AI-Assisted Development.",
+    url: "https://portofolio-two-drab.vercel.app/",
+    siteName: "Arnold David Portfolio",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Arnold David Silaban Portfolio",
+      },
+    ],
+    locale: "id_ID",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Arnold David Silaban - Fullstack Developer",
+    description: "Portofolio profesional Arnold David Silaban.",
+    images: ["/og-image.png"],
+  },
 };
 
 export default function RootLayout({
@@ -20,9 +44,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="scroll-smooth">
-      <body
-        className={`${poppins.className} antialiased`}
-      >
+      <body className={`${poppins.className} antialiased`}>
         <Navbar />
         {children}
       </body>
