@@ -9,6 +9,7 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://portofolio-two-drab.vercel.app"),
   title: "Arnold David Silaban - Fullstack Developer",
   description:
     "Portofolio profesional Arnold David Silaban. Lulusan TKJ dengan spesialisasi pengembangan Web Fullstack (Next.js, React) dan AI-Assisted Development.",
