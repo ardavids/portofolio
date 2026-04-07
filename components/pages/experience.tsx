@@ -18,7 +18,7 @@ export default function Experience() {
     {
       role: "Freelance IT Technician",
       company: "Self-Employed",
-      date: "2023 - 2025",
+      date: "2023 - Sekarang",
       location: "Remote / On-site",
       type: "Freelance",
       desc: "Menyediakan jasa perbaikan perangkat keras dan lunak secara mandiri. Berhasil mendiagnosa dan memperbaiki berbagai masalah laptop/PC klien, melakukan instalasi ulang OS (Windows/Linux), serta memberikan konsultasi upgrade spesifikasi hardware untuk performa optimal.",
