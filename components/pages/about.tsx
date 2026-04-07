@@ -5,7 +5,7 @@ import { User } from "lucide-react";
 
 export default function About() {
   const stats = [
-    { value: "3+", label: "Years Experience" },
+    { value: "3+", label: "Years IT Background" },
     { value: "5+", label: "Projects Built" },
     { value: "30+", label: "PCs Serviced" },
   ];
@@ -60,12 +60,13 @@ export default function About() {
                 <div className="space-y-3">
                   <p className="text-slate-300 text-base leading-relaxed">
                     Lulusan TKJ dengan pemahaman kuat di{" "}
-                    <span className="text-violet-400 font-semibold">Hardware &amp; Jaringan</span>, dan
+                    <span className="text-violet-400 font-bold">Hardware &amp; Jaringan</span>, dan
                     antusias mempelajari sistem manajemen bisnis berbasis web.
                   </p>
                   <p className="text-slate-400 text-sm leading-relaxed">
-                    Aktif mendalami pengembangan sistem web modern menggunakan pendekatan{" "}
-                    <span className="text-cyan-400 font-semibold">AI-Assisted Development</span>{" "}
+                    Aktif mendalami pengembangan sistem{" "}
+                    <span className="text-cyan-400 font-bold">Fullstack Web</span> modern menggunakan pendekatan{" "}
+                    <span className="text-violet-400 font-bold">AI-Assisted Development</span>{" "}
                     untuk membangun produk lebih cepat dan berkualitas.
                   </p>
                 </div>

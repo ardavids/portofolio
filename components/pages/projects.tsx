@@ -11,8 +11,8 @@ import {
 
 export default function Projects() {
   const featuredProject = {
-    title: "CatatAja – Loan Management System",
-    desc: "SaaS pencatatan pinjaman mandiri yang saya rancang sebagai solusi untuk merekap pinjaman, memantau kas masuk/keluar, pisah profit, dan pelacakan piutang secara real-time. Dibangun dengan pendekatan AI-Assisted Development menggunakan React 19 + TypeScript, dengan logika bisnis yang saya desain sendiri.",
+    title: "CatatAja – Fullstack SaaS (AI-Assisted)",
+    desc: "SaaS pencatatan pinjaman mandiri yang saya rancang sebagai solusi Fullstack untuk merekap pinjaman, memantau kas masuk/keluar, pisah profit, dan pelacakan piutang secara real-time. Dibangun dengan pendekatan AI-Assisted Development menggunakan React 19 + TypeScript.",
     tags: ["Next.js 16", "React 19", "TypeScript", "Supabase", "Tailwind CSS", "Shadcn UI", "Zustand", "PWA", "AI-Assisted"],
     image: "/catataja.png",
     demo: "https://catat-aja-navy.vercel.app/login",

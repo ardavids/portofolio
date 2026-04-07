@@ -169,9 +169,9 @@ const Hero = () => {
               className="absolute -bottom-4 -right-4 glass rounded-2xl px-4 py-2.5 border border-violet-500/30 animate-float"
               style={{ animationDelay: "1s" }}
             >
-              <p className="text-xs text-slate-400">Experience</p>
+              <p className="text-xs text-slate-400">Main Focus</p>
               <p className="text-white font-bold text-lg leading-tight">
-                3+ Years
+                Fullstack web
               </p>
             </div>
 
