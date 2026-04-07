@@ -117,14 +117,14 @@ export default function About() {
               {/* Stats — right on desktop, horizontal row on mobile */}
               <div className="lg:col-span-2">
                 {/* Mobile: 3-col horizontal row */}
-                <div className="grid grid-cols-3 gap-3 lg:hidden">
+                <div className="grid grid-cols-3 gap-2 sm:gap-3 lg:hidden">
                   {stats.map((stat) => (
                     <div
                       key={stat.label}
-                      className="glass rounded-xl p-4 border border-white/8 text-center"
+                      className="glass rounded-xl p-2 sm:p-4 border border-white/8 text-center flex flex-col justify-center"
                     >
-                      <p className="text-2xl font-black gradient-text">{stat.value}</p>
-                      <p className="text-slate-400 text-xs mt-1 leading-tight">{stat.label}</p>
+                      <p className="text-xl sm:text-2xl font-black gradient-text">{stat.value}</p>
+                      <p className="text-slate-400 text-[10px] sm:text-xs mt-1 leading-tight">{stat.label}</p>
                     </div>
                   ))}
                 </div>
