@@ -7,15 +7,13 @@ import Experience from "@/components/pages/experience";
 
 export default function Home() {
   return (
-    <>
-      <main className="min-h-screen bg-[#F0F6FF]">
-        <Hero />
-        <Experience />
-        <Projects />
-        <Skill />
-        <About />
-        <Footer />
-      </main>
-    </>
+    <main className="min-h-screen" style={{ backgroundColor: "oklch(0.07 0.02 264)" }}>
+      <Hero />
+      <Experience />
+      <Projects />
+      <Skill />
+      <About />
+      <Footer />
+    </main>
   );
 }
